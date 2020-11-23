@@ -1,0 +1,3 @@
+include ':droiddownloader'
+include ':app'
+rootProject.name = "DroidDownloader"
