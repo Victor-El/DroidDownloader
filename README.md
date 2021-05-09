@@ -46,6 +46,14 @@ Add the dependency
 
 #### Note: Depending on the download location add the neccessary permissions
 
+### Getting Downloader instance
+```kt
+val downloader: DroidDownloader = DefaultDroidDownloader.Builder()
+            .addConnectTimeOutMillis(5_000)
+            .addWriteTimeOutMillis(30_000)
+            .build()
+```
+
 ### Downloading a file
 ```kt
 suspend fun downloadFileAsync(
