@@ -61,7 +61,7 @@ suspend fun downloadFileAsync(
         path: String,
         filename: String,
     ) {
-        val status = downloader.downloadFileWithBearerAuth(url, path, filename)
+        val status = downloader.downloadFile(url, path, filename)
         completedTasks.add(status)
         withContext(Dispatchers.Main) {
             when (status) {
